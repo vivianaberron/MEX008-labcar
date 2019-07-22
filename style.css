@@ -1,0 +1,462 @@
+
+ * {
+   box-sizing:border-box;
+   margin: 0%;
+   padding: 0%;
+ }
+
+ /*Generales*/
+
+ body {
+  font-family: 'Nunito Sans', sans-serif;
+  margin: 0;
+  color: #888888;
+  }
+
+  a {
+    text-decoration:none;
+  }
+
+  
+  header {
+    background-color: white;
+    height: 8rem;
+    margin: 0 auto;
+    top: 0;
+    padding-bottom: 0;
+  }
+
+  nav {
+    padding: 0;
+    list-style: none;
+}
+
+
+  footer {
+    background-color: #2B2B2B;
+    height: 100vh;
+    color: white;
+  }
+
+  footer li {
+      margin-top: 0.8rem;
+}
+  section, nav, footer {
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+
+/*Menu*/
+
+  .menu {
+  color: #888888;
+  cursor: pointer;
+  display: flex;
+  order: -1;
+
+  }
+
+  .menu > li {
+    float: left;
+  }
+
+  .menu li a {
+    background-color: black;
+    color: white;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    display: block;
+  }
+
+  .menu li a:hover {
+    background-color: #f7b617;
+
+  }
+
+  .menu ul {
+    display: none;
+    position: absolute;
+    min-width: 35vh;
+  }
+
+  .menu li:hover > ul {
+    display:block;
+}
+
+.menu ul li {
+    position:relative;
+}
+
+.menu i  {
+  margin-right: 2rem;
+  font-size: 2rem;
+  border-radius: 0.2rem;
+  margin-left: 1rem;
+}
+
+li {
+  list-style: none;
+
+}
+.nomobile-menu {
+  display: none;
+}
+
+@media only screen and (min-width:768px) {
+  section, nav {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+header {
+    padding: 1rem 0;
+}
+
+nav {
+    position: relative;
+}
+
+.menu {
+  display: none;
+}
+
+.nomobile-menu {
+  display: block;
+  position: absolute;
+  right: 0;
+}
+
+.nomobile-menu li {
+  display: inline;
+
+}
+
+.nomobile-menu a {
+  margin-right: 3rem;
+  color: #191C26;
+}
+.nomobile-menu a:hover {
+  color: #f7b617;
+
+}
+}
+
+/*Main*/
+
+/*Regístrate*/
+.taxibground {
+  background-image: url(taxi.jpg);
+  background-position: center bottom;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+
+.orange {
+  display: flex;
+  background-color: #f7b617;
+  width: 75vw;
+  height: 55vh;
+  padding: 2rem;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+
+}
+
+#mobile-orange {
+  width: 80%;
+  font-size: 2rem;
+  margin-right: 0%;
+  line-height: 3rem;
+  color: white;
+  display: block;
+}
+
+#mobile-orange div {
+  display: block;
+  margin-top: 4rem;
+}
+.button {
+  background-color: white;
+  color: black;
+  height: 1.5rem;
+  border-radius: 13px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 0.2rem;
+  margin-bottom: 20%;
+ }
+@media only screen and (min-width:768px) {
+.taxibground {
+  background-image: url(taxi.jpg);
+  background-position: center bottom;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+
+.orange {
+  display: flex;
+  background-color: #f7b617;
+  width: 40vw;
+  height: 65vh;
+  padding: 2rem;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+
+}
+
+#mobile-orange {
+  width: 80%;
+  font-size: 2rem;
+  margin-right: 2px;
+  line-height: 3rem;
+  color: white;
+  display: block;
+}
+
+#mobile-orange div {
+  display: block;
+  margin-top: 4rem;
+}
+.button {
+  background-color: white;
+  color: black;
+  border-radius: 13px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 0.4rem;
+  margin: auto;
+  flex-direction: row;
+ }
+}
+
+/*Descarga la app*/
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F7B617;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+#iphone {
+  padding: 1.3rem;
+  width: 73%;
+}
+#mobile-app {
+  display: flex;
+  padding: 3rem 0;
+  width: 90vw;
+  height: 70vh;
+  border-color:  white;
+  border-style: solid;
+  border-width: 0.1rem;
+  margin: auto;
+  font-size: 2.3rem;
+  align-items: center;
+  justify-content: center;
+
+}
+.car {
+  background-image: url(conduce.jpg);
+  background-position: center bottom;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  color: white;
+  font-size: 2rem;
+}
+
+.car-content {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 1.8rem;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  margin: auto;
+}
+/*Footer*/
+.footer-center {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.footer-content {
+  display: flex;
+  margin: 1rem 0;
+}
+hr {
+  background-color: white;
+  border-color: white;
+  width: 0.3rem repeat-x 100% top;
+
+}
+.icons {
+  display: flex;
+  height: auto;
+  margin-right: 50%;
+  justify-content: flex-start;
+  align-items: right;
+}
+.icons i {
+  margin-right: 1.4rem;
+}
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+  min-width: 30%;
+}
+
+.footer-menu ul {
+  padding: 0;
+  margin: 0;
+  min-width: 30vh;
+}
+
+.download-icons {
+  display: flex;
+  margin-right: 5%;
+}
+
+.copyright {
+  margin-top: 1.1rem;
+  font-size: 0.9rem;
+ }
+}
+ 
+
+@media only screen and (min-width:768px) {
+.footer-content {
+  display: flex;
+  margin: 1rem 0;
+}
+.icons {
+ display: flex;
+ margin-top: 20%;
+ justify-content: space-around;
+}
+.icons i {
+  margin-right: 1rem;
+}
+.footer-menu {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left:  40px;
+  min-width: 25%;
+}
+.footer-menu ul {
+  padding: 0;
+  margin: 0;
+  min-width: 30vh;
+}
+.download-icons {
+  display: flex;
+  margin-right: 5%;
+}
+
+.copyright {
+  margin-top: 1.1rem;
+  font-size: 0.9rem;
+ }
+}
+ 
+
+/*Trazar ruta*/
+.rutebground {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #F7B617;
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.button2 {
+  background-color: #F7B617;
+  color: black;
+  border-radius: 13px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  margin-top: 70%;
+  flex-direction: row;
+}
+
+.rute-content {
+  display: flex;
+}
+
+.rute-view {
+  padding: 3rem;
+}
+
+.rute-view h2 {
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+.rute-view p {
+  text-align: left;
+  font-size: 1.4;
+  margin-top: 1.5rem;
+}
+
+.rute-view span {
+  margin: 2rem 0;
+  display: block;
+}
+
+.rute-view input {
+  border-width: 2px;
+  border-radius: 6px;
+  border-color:  white;
+  border-style: solid;
+  color: white;
+  background-color: #F7B617;
+  height: 2rem;
+  width: 60vw;
+  margin-left: 1rem;
+}
+
+.button3 {
+  background-color: white;
+  color: #2B2B2B;
+  padding: 0.6rem;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.map {
+  display: flex;
+  padding: 3rem 0;
+  width: 70vw;
+  height: 45vh;
+  border-color:  white;
+  border-style: solid;
+  border-width: 0.1rem;
+  margin: auto;
+  margin-bottom: 4rem;
+  font-size: 2.3rem;
+  align-items: center;
+  justify-content: center;
+
+}
